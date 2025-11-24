@@ -5,7 +5,7 @@ import { TableDisplay } from './tableDisplay.js';
 
 class AnalyticsGPTApp {
     constructor() {
-        this.apiBaseUrl = 'http://localhost:8000/api';
+        this.apiBaseUrl = '/api';
         this.currentTable = null;
         this.tables = [];
 
