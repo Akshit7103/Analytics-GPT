@@ -49,7 +49,6 @@ async def root():
 # Mount static files (CSS, JS)
 app.mount("/css", StaticFiles(directory=str(BASE_DIR / "frontend" / "css")), name="css")
 app.mount("/js", StaticFiles(directory=str(BASE_DIR / "frontend" / "js")), name="js")
-app.mount("/assets", StaticFiles(directory=str(BASE_DIR / "frontend" / "assets")), name="assets")
 
 
 @app.get("/health")
